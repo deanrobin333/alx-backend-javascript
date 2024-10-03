@@ -417,7 +417,7 @@ bob@dylan:~$
 
 - Fix this code and make it work.
 
-- Result:
+
 ```
 const class2019 = new HolbertonClass(2019, 'San Francisco');
 
@@ -466,6 +466,9 @@ export class StudentHolberton {
 
 
 export const listOfStudents = [student1, student2, student3, student4, student5];
+```
+- Result:
+```
 bob@dylan:~$ cat 9-main.js
 
 import listOfStudents from "./9-hoisting.js";
