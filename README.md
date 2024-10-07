@@ -6,7 +6,7 @@
     - [0. 0x00. ES6 Basics](#0)
     - [1. 0x01. ES6 Promises](#1)
     - [2. 0x02. ES6 classes](#2)
-    - [3. ](#3)
+    - [3. 0x03. ES6 data manipulation](#3)
     - [4. ](#4)
 ---
 ## Author Details
@@ -50,7 +50,10 @@
 ---
 #### 3
 ###### [Table of Contents](#table-of-contents)
-### [3. ](./)
+### [3. 0x03. ES6 data manipulation](./0x03-ES6_data_manipulation)
+- How to use map, filter and reduce on arrays
+- Typed arrays
+- The Set, Map, and Weak link data structures
 
 ---
 #### 4
