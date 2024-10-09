@@ -351,14 +351,6 @@ Because of time constraints, you can’t write a connector to the database, and 
 
 - Here it is
 
-- Write an ambient file within `task_3/js`, named `crud.d.ts` containing the type declarations for each crud function. At the top of the file import `RowID` and `RowElement` from `interface.ts`.
-- In `main.ts`
-- Create an object called `row` with the type `RowElement` with the fields set to these values:
-- Create a `const` variable named `newRowID` with the type `RowID` and assign the value the `insertRow`  command.
-- Next, create a `const` variable named `updatedRow` with the type `RowElement` and update `row` with an age field set to `23`
-- Finally, call the `updateRow` and `deleteRow` commands.
-- Expected result:
-- Requirements:
 ```
 export function insertRow(row) {
 
@@ -376,6 +368,28 @@ export function updateRow(rowId, row) {
 
   return rowId;
 }
+```
+- Write an ambient file within `task_3/js`, named `crud.d.ts` containing the type declarations for each crud function. At the top of the file import `RowID` and `RowElement` from `interface.ts`.
+    
+- In `main.ts`
+    
+    - At the top of the file create a [triple slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html "triple slash directive") that includes all the dependencies from `crud.d.ts`
+    - Import the `rowID` type and `rowElement` from `interface.ts`
+    - Import everything from `crud.js` as `CRUD`
+    
+- Create an object called `row` with the type `RowElement` with the fields set to these values:
+    
+    - `firstName`: `Guillaume`
+    - `lastName`: `Salva`
+    
+- Create a `const` variable named `newRowID` with the type `RowID` and assign the value the `insertRow` command.
+    
+- Next, create a `const` variable named `updatedRow` with the type `RowElement` and update `row` with an age field set to `23`
+    
+- Finally, call the `updateRow` and `deleteRow` commands.
+    
+- Expected result:
+```
 const obj = {firstName: "Guillaume", lastName: "Salva"};
 
 CRUD.insertRow(obj)
@@ -388,6 +402,12 @@ CRUD.updateRow(newRowID, updatedRow);
 CRUD.deleteRow(125);
 // Delete row id 125
 ```
+- Requirements:
+    
+    - When running `npm run build`, no TypeScript error should be displayed.
+    - Every variable should use TypeScript when possible.
+    - The main file and the ambient file should both import the types defined in the interface file.
+    - You can easily test your ambient file by looking at the intellisense of your IDE when using the 3rd party functions.
 
 <br></br>
 - Repo
@@ -403,7 +423,6 @@ CRUD.deleteRow(125);
 
 - Create a new directory `task_4` and copy the above `tsconfig.json` and put this `package.json` in there
 
-- In `task_4/js/subjects`:
 ```
 {
 
@@ -432,6 +451,34 @@ CRUD.deleteRow(125);
   }
 }
 ```
+- In `task_4/js/subjects`:
+    
+    - Create a file `Teacher.ts` and write a `Teacher` interface in a namespace named `Subjects`.
+        
+        - the interface requires `firstName` and `lastName` as string
+    - Create a file `Subject.ts` and write a `Subject` class in the same namespace named `Subjects`.
+        
+        - the class has one attribute `teacher` that implements the `Teacher` interface
+        - the class has one setter method `setTeacher` that accepts a `teacher` in argument (and as setter, set the instance attribute `teacher` with it)
+    - Create a file `Cpp.ts` and make the following modifications in the same namespace.
+        
+        - Using declaration merging, add a new optional attribute `experienceTeachingC` (number) to the `Teacher` interface
+        - Create a class `Cpp` extending from `Subject`
+        - Write a method named `getRequirements` that will return a string `Here is the list of requirements for Cpp`
+        - Write a method named `getAvailableTeacher` that will return a string `Available Teacher: <first name of teacher>`
+        - If the teacher doesn’t have any experience in teaching C, then the method should return a string `No available teacher`
+    - Create a file `React.ts` and write a `React Class` in the same namespace.
+        
+        - Add a new attribute `experienceTeachingReact?` (number) to the `Teacher` interface
+        - In the class, write a method named `getRequirements` that will return a string `Here is the list of requirements for React`
+        - Write a method named `getAvailableTeacher` that will return a string `Available Teacher: <first name of teacher>`
+        - If the teacher doesn’t have any experience in teaching React, then the method should return a string `No available teacher`
+    - Create a file `Java.ts` and write a `Java Class` in the same namespace.
+        
+        - Add a new attribute `experienceTeachingJava?` (number) to the `Teacher` interface
+        - In the class, write a method named `getRequirements` that will return a string `Here is the list of requirements for Java`
+        - Write a method named `getAvailableTeacher` that will return a string `Available Teacher: <first name of teacher>`
+        - If the teacher doesn’t have any experience in teaching Java, then the method should return a string `No available teacher`
 
 <br></br>
 - Repo
@@ -459,7 +506,6 @@ CRUD.deleteRow(125);
    - for React subject, log to the console `React`, set `cTeacher` as the teacher, call the two methods `getRequirements` and `getAvailableTeacher`, and print the strings they return
 
 
-```
 
 <br></br>
 - Repo
