@@ -7,7 +7,8 @@
     - [1. 0x01. ES6 Promises](#1)
     - [2. 0x02. ES6 classes](#2)
     - [3. 0x03. ES6 data manipulation](#3)
-    - [4. ](#4)
+    - [4. 0x04. Typescript](#4)
+    - [5. ](#5)
 ---
 ## Author Details
 - *Dean Robin Otsyeno - deanrobin777@gmail.com*
@@ -58,7 +59,20 @@
 ---
 #### 4
 ###### [Table of Contents](#table-of-contents)
-### [4. ](./)
+### [4. 0x04. Typescript](./0x04-TypeScript)
+- Basic types in Typescript
+- Interfaces, Classes, and functions
+- How to work with the DOM and Typescript
+- Generic types
+- How to use namespaces
+- How to merge declarations
+- How to use an ambient Namespace to import an external library
+- Basic nominal typing with Typescript
+
+---
+#### 5
+###### [Table of Contents](#table-of-contents)
+### [5. ](./)
 
 ---
 
