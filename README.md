@@ -8,7 +8,8 @@
     - [2. 0x02. ES6 classes](#2)
     - [3. 0x03. ES6 data manipulation](#3)
     - [4. 0x04. Typescript](#4)
-    - [5. ](#5)
+    - [5. 0x05. NodeJS Basics](#5)
+    - [6. ](#6)
 ---
 ## Author Details
 - *Dean Robin Otsyeno - deanrobin777@gmail.com*
@@ -72,7 +73,21 @@
 ---
 #### 5
 ###### [Table of Contents](#table-of-contents)
-### [5. ](./)
+### [5. 0x05. NodeJS Basics](./0x05-Node_JS_basic)
+- run javascript using NodeJS
+- use NodeJS modules
+- use specific Node JS module to read files
+- use `process` to access command line arguments and the environment
+- create a small HTTP server using Node JS
+- create a small HTTP server using Express JS
+- create advanced routes with Express JS
+- use ES6 with Node JS with Babel-node
+- use Nodemon to develop faster
+
+---
+#### 6
+###### [Table of Contents](#table-of-contents)
+### [6. ](./)
 
 ---
 
