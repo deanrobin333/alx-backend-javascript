@@ -9,7 +9,8 @@
     - [3. 0x03. ES6 data manipulation](#3)
     - [4. 0x04. Typescript](#4)
     - [5. 0x05. NodeJS Basics](#5)
-    - [6. ](#6)
+    - [6. 0x06. Unittests in JS](#6)
+    - [7. ](#7)
 ---
 ## Author Details
 - *Dean Robin Otsyeno - deanrobin777@gmail.com*
@@ -87,7 +88,20 @@
 ---
 #### 6
 ###### [Table of Contents](#table-of-contents)
-### [6. ](./)
+### [6. 0x06. Unittests in JS](./0x06-unittests_in_js)
+- How to use Mocha to write a test suite
+- How to use different assertion libraries (Node or Chai)
+- How to present long test suites
+- When and how to use spies
+- When and how to use stubs
+- What are hooks and when to use them
+- Unit testing with Async functions
+- How to write integration tests with a small node server
+
+---
+#### 7
+###### [Table of Contents](#table-of-contents)
+### [7. ](./)
 
 ---
 
